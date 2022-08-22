@@ -1,0 +1,82 @@
+{
+  "name": "operator",
+  "version": "1.0.0-beta",
+  "private": true,
+  "main": "./dist/index.js",
+  "exports": "./dist/index.js",
+  "license": "GPL-3.0",
+  "type": "module",
+  "resolutions": {
+    "lru-cache": "^7.10.1"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "scripts": {
+    "update-spam404": "curl https://raw.githubusercontent.com/Sly-Little-Fox/spam404/master/main-blacklist.txt -o src/data/links/spam404.txt"
+  },
+  "dependencies": {
+    "@discordjs/builders": "^0.13.0",
+    "@foxify/events": "^2.1.0",
+    "@prisma/client": "^4.1.0",
+    "@sapphire/discord.js-utilities": "^4.11.3",
+    "@sapphire/framework": "^3.0.0-next.9a74f02.0",
+    "@sapphire/plugin-hmr": "^1.2.2",
+    "@sapphire/plugin-logger": "^2.2.3",
+    "@sapphire/shapeshift": "^3.5.2-next.961ee16.0",
+    "@sentry/node": "^7.7.0",
+    "@shelf/fast-chunk-string": "^3.0.0",
+    "bufferutil": "^4.0.6",
+    "change-case": "^4.1.2",
+    "color-parse": "^1.4.2",
+    "consola": "^2.15.3",
+    "discord-emoji": "^2.0.5",
+    "discord.js": "^13.9.0",
+    "dotenv": "^16.0.1",
+    "entities": "^4.3.1",
+    "fuse.js": "^6.6.2",
+    "lodash": "^4.17.21",
+    "mem": "^9.0.2",
+    "memcached": "^2.2.2",
+    "node-cron": "^3.0.1",
+    "owoify-js": "^1.0.7",
+    "p-throttle": "^5.0.0",
+    "phin": "^3.6.1",
+    "picomatch": "^2.3.1",
+    "prettier": "^2.7.1",
+    "rotating-file-stream": "^3.0.4",
+    "sharp": "^0.30.7",
+    "snoowrap": "^1.23.0",
+    "socks-proxy-agent": "^7.0.0",
+    "systeminformation": "^5.12.1",
+    "terser": "^5.14.2",
+    "try-to-catch": "^3.0.1",
+    "utf-8-validate": "^5.0.9",
+    "vm2": "patriksimek/vm2"
+  },
+  "devDependencies": {
+    "@types/escodegen": "^0.0.7",
+    "@types/lodash": "^4.14.182",
+    "@types/memcached": "^2.2.7",
+    "@types/node": "^16.11.45",
+    "@types/node-cron": "^3.0.1",
+    "@types/picomatch": "^2.3.0",
+    "@types/prettier": "^2.6.3",
+    "@types/sharp": "^0.30.4",
+    "@types/try-to-catch": "^3.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.30.7",
+    "@typescript-eslint/parser": "^5.30.7",
+    "eslint": "^8.20.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "node-gyp": "^9.1.0",
+    "prisma": "^3.15.2",
+    "typescript": "^4.7.4"
+  },
+  "optionalDependencies": {
+    "supports-color": "^9.2.2"
+  },
+  "packageManager": "yarn@3.2.1"
+}
